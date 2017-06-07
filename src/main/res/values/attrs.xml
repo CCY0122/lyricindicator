@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text_size" format="dimension" />
+    <attr name="default_color" format="color|reference" />
+    <attr name="changed_color" format="color|reference" />
+
+    <declare-styleable name="LyricTextView">
+        <attr name="text" format="string" />
+        <attr name="text_size" />
+        <attr name="default_color"/>
+        <attr name="changed_color"/>
+        <attr name="progress" format="float" />
+        <attr name="direction">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LyricIndicator">
+        <attr name="text_size"/>
+        <attr name="default_color"/>
+        <attr name="changed_color"/>
+        <attr name="item_padding_l" format="dimension"/>
+        <attr name="item_padding_r" format="dimension"/>
+        <attr name="item_padding_t" format="dimension"/>
+        <attr name="item_padding_b" format="dimension"/>
+        <attr name="item_padding" format="dimension"/>
+    </declare-styleable>
+</resources>
