@@ -31,4 +31,4 @@
  ViewPager的adapter要实现 public CharSequence getPageTitle(int position)作为每一页对应的title<br/>
 
 <br/>
-![image](https://github.com/CCY0122/lyricindicator/blob/master/image.gif)<br/>
+![image](https://github.com/CCY0122/lyricindicator/blob/master/image_mid.gif)<br/>
