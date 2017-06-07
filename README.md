@@ -3,6 +3,7 @@
 本控件是对[lyricTextView](https://github.com/CCY0122/lyrictextview)的封装应用<br/>
 代码很少，建议直接复制<br/>
 使用方法<br/><br/>
+第一步：<br/>
 <com.example.lyricindicator.LyricIndicator<br/>
         android:id="@+id/indicator"<br/>
         android:layout_width="match_parent"<br/>
@@ -24,8 +25,8 @@
         item_padding_b<br/>
         item_padding<br/><br/>
         '注意':IDE可能还会列出text、progress、direction这些属性，这些属性属于[lyricTextView](https://github.com/CCY0122/lyrictextview)，设置了也是无效的。<br/>
-        
-在代码中,需要与viewpager进行关联:<br/>
+       
+第二步：与viewpager进行关联:<br/>
  lyricIndicator = (LyricIndicator) findViewById(R.id.indicator);<br/>
  lyricIndicator.setupWithViewPager(mViewPager);<br/>
  注意：ViewPager的adapter要实现 public CharSequence getPageTitle(int position)作为每一页对应的title<br/>
