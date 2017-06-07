@@ -40,22 +40,8 @@ public class LyricIndicator extends HorizontalScrollView {
     private int paddingT;
     private int paddingB;
     private ViewPager vp; //关联的viewpager
-    private OnPageChangeListener listener;
-
     private int currentPos;
 
-
-    public interface OnPageChangeListener {
-        void onPageScrolled(int position, float positionOffset, int positionOffsetPixels);
-
-        void onPageSelected(int position);
-
-        void onPageScrollStateChanged(int state);
-    }
-
-    public void addOnPagerChangeListener(OnPageChangeListener l) {
-        this.listener = l;
-    }
 
     public LyricIndicator(Context context) {
         this(context, null);
@@ -109,27 +95,19 @@ public class LyricIndicator extends HorizontalScrollView {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 itemScroll(position, positionOffset);
-                if (listener != null) {
-                    listener.onPageScrolled(position, positionOffset, positionOffsetPixels);
-                }
+
             }
 
             @Override
             public void onPageSelected(int position) {
                 Log.d("ccy", "onPageSelected" + position);
                 resetAllItem();
-                if (listener != null) {
-                    listener.onPageSelected(position);
-                }
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
                 if(state == ViewPager.SCROLL_STATE_IDLE){  //解决残影，不够完美，被这个问题烦死了！！！！
                     resetAllItem();
-                }
-                if (listener != null) {
-                    listener.onPageScrollStateChanged(state);
                 }
             }
         });
