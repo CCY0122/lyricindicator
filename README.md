@@ -32,4 +32,4 @@
  1、ViewPager的adapter要实现 public CharSequence getPageTitle(int position)作为每一页对应的title<br/>
  2、请使用LyricIndicator的addOnPageChangeListener代替Viewpager自己的addOnPageChangeListener(如果你要监听这个接口的话)<br/>
 <br/>
-![image](https://github.com/CCY0122/lyricindicator/blob/master/image_mid.gif)<br/>
+![image](https://github.com/CCY0122/lyricindicator/blob/master/image.gif)<br/>
