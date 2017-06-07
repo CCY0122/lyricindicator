@@ -81,7 +81,6 @@ public class LyricIndicator extends HorizontalScrollView {
 
     /**
      * 关联viewpager，
-     * 请使用本view的addOnPagerChangeListener代替viewpager自身的addOnPagerChangeListener
      * @param vp
      */
     public void setupWithViewPager(final ViewPager vp) {
