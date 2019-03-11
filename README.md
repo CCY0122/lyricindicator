@@ -11,33 +11,33 @@
 
 第一步：<br/>
 ```xml
-<com.example.lyricindicator.LyricIndicator<br/>
-        android:id="@+id/indicator"<br/>
-        android:layout_width="match_parent"<br/>
-        android:layout_height="wrap_content"<br/>
-        android:background="#11000000"<br/>
-        app:item_padding="7dp"<br/>
-        app:text_size="20sp"<br/>
-        app:default_color="#000000"<br/>
-        app:changed_color="#ff0000"><br/>
-        </com.example.lyricindicator.LyricIndicator><br/><br/>
-可使用的属性有：<br/>
-        text_size 字体大小<br/>
-        default_color默认颜色<br/>
-        changed_color渐变颜色<br/>
-        字体的左右上下padding：<br/>
-        item_padding_l<br/>
-        item_padding_r<br/>
-        item_padding_t<br/>
-        item_padding_b<br/>
-        item_padding<br/><br/>
+<com.example.lyricindicator.LyricIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11000000"
+        app:item_padding="7dp"
+        app:text_size="20sp"
+        app:default_color="#000000"
+        app:changed_color="#ff0000">
+        </com.example.lyricindicator.LyricIndicator><br/>
+可使用的属性有：
+        text_size 字体大小
+        default_color默认颜色
+        changed_color渐变颜色
+        字体的左右上下padding：
+        item_padding_l
+        item_padding_r
+        item_padding_t
+        item_padding_b
+        item_padding<br/>
 ```
         **'注意':IDE可能还会列出text、progress、direction这些属性，这些属性属于[lyricTextView](https://github.com/CCY0122/lyrictextview)，设置了也是无效的。**<br/>
        
 第二步：与viewpager进行关联:<br/>
 ```java
- lyricIndicator = (LyricIndicator) findViewById(R.id.indicator);<br/>
- lyricIndicator.setupWithViewPager(mViewPager);<br/>
+ lyricIndicator = (LyricIndicator) findViewById(R.id.indicator);
+ lyricIndicator.setupWithViewPager(mViewPager);
  ```
  **注意：ViewPager的adapter要实现 `public CharSequence getPageTitle(int position)`作为每一页对应的title**<br/>
 
