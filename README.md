@@ -20,7 +20,7 @@
         app:text_size="20sp"
         app:default_color="#000000"
         app:changed_color="#ff0000">
-        </com.example.lyricindicator.LyricIndicator><br/>
+        </com.example.lyricindicator.LyricIndicator>
 可使用的属性有：
         text_size 字体大小
         default_color默认颜色
@@ -30,7 +30,7 @@
         item_padding_r
         item_padding_t
         item_padding_b
-        item_padding<br/>
+        item_padding
 ```
         **'注意':IDE可能还会列出text、progress、direction这些属性，这些属性属于[lyricTextView](https://github.com/CCY0122/lyrictextview)，设置了也是无效的。**<br/>
        
